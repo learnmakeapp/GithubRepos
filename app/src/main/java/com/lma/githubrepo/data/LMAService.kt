@@ -8,7 +8,7 @@ interface LMAService {
     @GET("/users/{username}/repos")
     fun getListRepos(
         @Path("username") username: String
-    ): Single<GithubResponse>
+    ): Single<List<GithubRepository>>
 
     @GET("/users/{username}")
     fun getGithubUserInfo(

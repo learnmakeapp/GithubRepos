@@ -2,10 +2,6 @@ package com.lma.githubrepo.data
 
 import com.google.gson.annotations.SerializedName
 
-data class GithubResponse(
-    val data: List<GithubRepository>
-)
-
 data class GithubRepository(
     @SerializedName("id") val id : Int,
     @SerializedName("node_id") val nodeId : String,
